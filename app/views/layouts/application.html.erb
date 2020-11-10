@@ -9,7 +9,26 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="homepage is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header">
+    
+        <%= render 'shared/nav'%>
+    
+        <div id="content">
+          <%= yield %>
+        </div>
+
+        <%= render 'shared/footer'%>
+    
+    
+      </div>
+    </div>
+    </div>
+    
+    </div>
+
+	
   </body>
 </html>
